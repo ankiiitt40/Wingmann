@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.birthday-picker {
+  width: 100%;
+}
+
+.birthday-picker .rmc-picker {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.birthday-picker .rmc-picker-column {
+  flex: none !important;
+  width: 72px;
+}
+
+.birthday-picker .rmc-picker-column:last-child {
+  width: 110px; /* Year wider */
+}
+
+.birthday-picker .rmc-picker-item {
+  font-size: 16px;
+  color: #000;
+}
+
+.birthday-picker .rmc-picker-item-selected {
+  font-weight: 600;
+}
+
